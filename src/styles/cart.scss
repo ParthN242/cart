@@ -1,0 +1,95 @@
+@import "colors";
+
+.cart {
+    width: 100%;
+    height: 100%;
+    // display: grid;
+    // grid-template-columns: 4fr 1fr;
+    display: flex;
+
+
+    main {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        overflow-y: auto;
+
+        >h1 {
+            height: 100%;
+            display: grid;
+            place-items: center;
+            font: 100 4rem "Roboto";
+            color: $tertiary;
+            letter-spacing: 2px;
+            word-spacing: 5px;
+        }
+
+        .cartItem {
+            background-color: $tertiary;
+            margin-bottom: 1rem;
+            width: 100%;
+            display: grid;
+            align-items: center;
+            grid-template-columns: 1fr 3fr 1fr 1fr;
+            padding: 0.5rem;
+            border-radius: 10px;
+
+            >img {
+                width: 180px;
+                height: 180px;
+                object-fit: cover;
+            }
+
+            >.btns {
+                display: flex;
+                justify-content: center;
+
+                button {
+                    width: 30px;
+                    height: 30px;
+                    background-color: $primary;
+                    color: $tertiary;
+                    font-size: 1.2rem;
+                    cursor: pointer;
+                    border: none;
+                }
+
+                p {
+                    width: 30px;
+                    height: 30px;
+                    display: grid;
+                    place-items: center;
+                }
+
+
+            }
+
+            >svg {
+                font-size: 1.4rem;
+                cursor: pointer;
+            }
+        }
+    }
+
+    aside {
+        width: 25%;
+        display: grid;
+        align-items: center;
+        padding: 1rem;
+        border-radius: 100px 0 0 100px;
+        box-shadow: -10px 0 10px rgba(78, 77, 77, 0.185);
+
+        div {
+            h2 {
+                color: $tertiary;
+                margin: 2rem 0;
+                font: 100 2rem "Roboto";
+
+                &:last-of-type {
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}

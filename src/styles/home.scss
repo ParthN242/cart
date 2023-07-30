@@ -1,0 +1,46 @@
+@import "colors";
+
+.home {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 5rem;
+
+
+
+    .productContainer {
+        width: 200px;
+        height: 300px;
+        background-color: $tertiary;
+        display: grid;
+        place-items: center;
+        grid-template-rows: 1fr 1fr 3fr 1fr;
+        padding: 2rem;
+        border-radius: 10px;
+
+        img {
+            width: 100px;
+            height: 110px;
+            object-fit: cover;
+        }
+
+        button {
+            width: 100%;
+            background-color: $secondary;
+            color: $tertiary;
+            border: none;
+            padding: 0.8rem;
+            border-radius: 5px;
+            font: 500 0.8rem "Roboto";
+            transition: all 0.2s ease;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}

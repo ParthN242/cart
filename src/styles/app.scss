@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+@import "colors";
+@import "header.scss";
+@import "cart.scss";
+@import "home.scss";
+@import "mediaQuery.scss";
+
+body {
+    background-color: $primary;
+}
+
+.main {
+    width: 100%;
+    height: calc(100vh - 50px);
+}
